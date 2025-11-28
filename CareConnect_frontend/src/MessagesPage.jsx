@@ -8,7 +8,7 @@ const MessagesPage = ({ sender, onMessagesRead }) => {
   const [replyToId, setReplyToId] = useState(null); 
   const [senderUsername, setSenderUsername] = useState(""); 
   const loggedInUserId = parseInt(localStorage.getItem("userId"), 10);
-  const API_BASE_URL = "https://careconnect-2-j2tv.onrender.com";
+  const API_BASE_URL = "https://careconnect2.onrender.com";
     // const API_BASE_URL = "http://localhost:8000";
   const messagesEndRef = useRef(null);
 

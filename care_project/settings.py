@@ -47,7 +47,7 @@ LOGGING = {
 }
 
 
-ALLOWED_HOSTS = ["localhost", "127.0.0.1", "careconnect-2-j2tv.onrender.com",]
+ALLOWED_HOSTS = ["localhost", "127.0.0.1", "careconnect2.onrender.com",]
 
 
 # Application definition
@@ -80,7 +80,7 @@ CACHES = {
 }
 
 CORS_ALLOWED_ORIGINS = [
-    "https://careconnect-2-j2tv.onrender.com",  
+    "https://careconnect2.onrender.com",  
     "http://localhost:5173",                    
 ]
 # CORS_ALLOWED_ORIGINS = [
@@ -111,7 +111,7 @@ CORS_ALLOW_METHODS = [
 ]
 
 CSRF_TRUSTED_ORIGINS = [
-    "https://careconnect-2-j2tv.onrender.com",  
+    "https://careconnect2.onrender.com",  
     "http://localhost:5173", 
 ]
 

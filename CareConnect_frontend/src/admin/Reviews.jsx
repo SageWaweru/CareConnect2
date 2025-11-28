@@ -6,8 +6,8 @@ const Reviews = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [caretakerId, setCaretakerId] = useState("");
-  const API_BASE_URL = "https://careconnect-2-j2tv.onrender.com";
-  // const API_BASE_URL = "http://localhost:8000";
+  const API_BASE_URL = "https://careconnect2.onrender.com";
+    // const API_BASE_URL = "http://localhost:8000";
 
 
   useEffect(() => {

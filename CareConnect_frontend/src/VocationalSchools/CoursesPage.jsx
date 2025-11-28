@@ -6,8 +6,8 @@ const CoursesPage = () => {
   const { schoolId } = useParams();
   const [selectedCourseId, setSelectedCourseId] = useState(null);
   const [courses, setCourses] = useState([]);
-  const API_BASE_URL = "https://careconnect-2-j2tv.onrender.com";
-  // const API_BASE_URL = "http://localhost:8000";
+  const API_BASE_URL = "https://careconnect2.onrender.com";
+    // const API_BASE_URL = "http://localhost:8000";
 
 
   const enrollInCourse = (courseId) => {

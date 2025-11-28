@@ -10,8 +10,8 @@ const ProfileView = () => {
   const [isEditing, setIsEditing] = useState(false);
   const [averageRating, setAverageRating] = useState(0); 
   const [caretakerId, setCaretakerId] = useState(null);
-  const API_BASE_URL = "https://careconnect-2-j2tv.onrender.com";
-  // const API_BASE_URL = "http://localhost:8000";
+  const API_BASE_URL = "https://careconnect2.onrender.com";
+    // const API_BASE_URL = "http://localhost:8000";
   const [formData, setFormData] = useState({
     name: "",
     certifications: "",

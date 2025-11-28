@@ -5,8 +5,8 @@ const SchoolProfile = () => {
   const [school, setSchool] = useState(null);
   const [profileNotFound, setProfileNotFound] = useState(false);
   const [isEditing, setIsEditing] = useState(false);
-  const API_BASE_URL = "https://careconnect-2-j2tv.onrender.com";
-  // const API_BASE_URL = "http://localhost:8000";
+  const API_BASE_URL = "https://careconnect2.onrender.com";
+    // const API_BASE_URL = "http://localhost:8000";
 
   const [formData, setFormData] = useState({
     name: "",

@@ -3,8 +3,8 @@ import { useNavigate } from "react-router-dom";
 
 const SchoolList = () => {
   const [schools, setSchools] = useState([]);
-  const API_BASE_URL = "https://careconnect-2-j2tv.onrender.com";
-  // const API_BASE_URL = "http://localhost:8000";
+  const API_BASE_URL = "https://careconnect2.onrender.com";
+    // const API_BASE_URL = "http://localhost:8000";
 
   const navigate = useNavigate();
   useEffect(() => {

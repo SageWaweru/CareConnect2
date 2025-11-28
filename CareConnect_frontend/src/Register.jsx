@@ -7,7 +7,7 @@ const Register = () => {
   const [formData, setFormData] = useState({ username: '', email: '', password: '' , role: 'customer',});
   const [message, setMessage] = useState('');
   const navigate = useNavigate();
-  const API_BASE_URL = "https://careconnect-2-j2tv.onrender.com";
+  const API_BASE_URL = "https://careconnect2.onrender.com";
     // const API_BASE_URL = "http://localhost:8000";
 
 
