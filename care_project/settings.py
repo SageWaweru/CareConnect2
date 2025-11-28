@@ -14,6 +14,8 @@ from pathlib import Path
 from decouple import config
 import os
 import cloudinary
+import dj_database_url
+import urllib.parse
 
 
 
@@ -28,7 +30,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = config('DEBUG', default=True, cast=bool)
 
 LOGGING = {
     'version': 1,
@@ -163,12 +165,12 @@ ASGI_APPLICATION = 'care_project.asgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
 
 # DATABASES = {
 #     'default': {
@@ -180,6 +182,13 @@ DATABASES = {
 #         'PORT':'5432'
 #     }
 # }
+
+DATABASES = {
+    'default': dj_database_url.config(
+        default=config('EXTERNAL')  
+    )
+}
+
 
 AUTH_USER_MODEL = 'care_app.CustomUser'
 
